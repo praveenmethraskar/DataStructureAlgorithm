@@ -10,7 +10,7 @@ namespace DataStructureAlgorithms
             while (flag == "Y" || flag == "y")
             {
                 Console.WriteLine("Welcome To Datastructures and Algorithms");
-                Console.WriteLine("1.Permutation Using Recursion\n2.BinarySearch\n3.InsertionSort\n4.BubbleSort");
+                Console.WriteLine("1.Permutation Using Recursion\n2.BinarySearch\n3.InsertionSort\n4.BubbleSort \n5.MergeSort");
                 Console.WriteLine("Enter Your Option");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
@@ -31,6 +31,10 @@ namespace DataStructureAlgorithms
                     case 4:
                         BubbleSort bubblesort = new BubbleSort();
                         bubblesort.bubbleSort();
+                        break;
+                    case 5:
+                        MergeSort mergesort = new MergeSort();
+                        mergesort.mergeSort();
                         break;
 
                     default:
