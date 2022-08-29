@@ -10,14 +10,18 @@ namespace DataStructureAlgorithms
             while (flag == "Y" || flag == "y")
             {
                 Console.WriteLine("Welcome To Datastructures and Algorithms");
-                Console.WriteLine("1.Permutation Using Recursion");
-                Console.WriteLine("Enter Your Option 1.permutation using recursion");
+                Console.WriteLine("1.Permutation Using Recursion\n2.BinarySearch");
+                Console.WriteLine("Enter Your Option");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
                 {
                     case 1:
                         PermutationsOfString permutationsofstring = new PermutationsOfString();
                         permutationsofstring.permutations();
+                        break;
+                    case 2:
+                        BinarySearchProb binarysearchprob = new BinarySearchProb();
+                        binarysearchprob.binarySearch();
                         break;
 
                     default:
